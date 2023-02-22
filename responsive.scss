@@ -1,0 +1,45 @@
+@media only screen and (max-width: 768PX) {
+  .burguer-img {
+    width: 76%;
+    left: 23.9%;
+    position: absolute;
+    top: 33%;
+  }
+  .prato-1 {
+    width: 80%;
+    position: absolute;
+    top: 106%;
+  }
+  
+  .slogan{
+    font-size: 8vw;
+
+  }
+  .container-slogan1{
+    
+    width: 95%;
+    height: 100%;
+    
+  }
+  .descricao {
+   
+    font-size: 3.8vw;
+    position: absolute;
+    top: 53%
+  }
+
+  .botoes-container{
+    width: 93.5%;
+    height: 50%;
+   top: 65%;
+  }
+
+  .botoes-container .botao {
+    padding: 4.6% 15%;
+    font-size: 2.5vw;
+  }
+  .botoes-container .botao2 {
+    padding: 4.6% 15%;;
+    font-size: 2.5vw;
+  }
+}

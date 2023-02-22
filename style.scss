@@ -1,0 +1,219 @@
+/* Variáveis */
+$fonte-principal: 'Poppins', sans-serif;
+$cor-primaria: #f75e17;
+
+
+/* Importações */
+@import 'food-cards';
+
+
+
+/* Reset */
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $cor-primaria;
+    color: #fff;
+    padding: 40px;
+  }
+    
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      font-family: $fonte-principal;
+    }
+  
+    .menu {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-family: $fonte-principal;
+      
+      ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        
+        li {
+          margin: 0 30px;
+          font-size: 18px;
+          list-style: none;
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .burguer-img{
+      width: 56%;
+      left: 44%;
+      position: absolute;
+    }
+    .prato-1{
+      width: 73%;
+      position: absolute;
+      top: 106%;
+    }
+
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+ 
+    .slogan-2 {
+      font-family: $fonte-principal;
+      font-size: 35px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      top: 113%;
+      left: 47%;
+      position: absolute;
+      
+      // Responsividade
+      @media screen and (max-width: 768px) {
+        font-size: $tamanho-slogan-mobile;
+      }
+    }
+    
+    // Estilos para a descrição
+    .descricao-2 {
+      font-family: $fonte-principal;
+      font-size: 17.8px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      top: 130%;
+      left: 47%;
+      position: absolute;
+
+      @media screen and (max-width: 768px) {
+        font-size: 13px;
+        top: 50%;
+      }
+    }
+
+
+    .slogan-3 {
+      font-family: $fonte-principal;
+      font-size: 35px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      top: 200%;
+      left: 21%;
+      position: absolute;
+      
+      // Responsividade
+      @media screen and (max-width: 768px) {
+        font-size: $tamanho-slogan-mobile;
+      }
+    }
+    
+    // Estilos para a descrição
+    .descricao-3 {
+      font-family: $fonte-principal;
+      font-size: 25.8px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      top: 208%;
+      left: 35.5%;
+      position: absolute;
+      color: $cor-primaria;
+      @media screen and (max-width: 768px) {
+        font-size: 13px;
+        top: 50%;
+      }
+    }
+
+    .cards{
+      top: 161%;
+      left: 45.6%;
+      position: absolute;
+      width: 50%;
+    }
+
+    span{
+      color: $cor-primaria;
+    }
+
+    
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    @media screen and (max-width: 768px) {
+      .menu {
+        display: none;
+      }
+  
+      .menu-toggle {
+        display: block;
+      }
+  
+      .menu-toggle:focus + .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px;
+  
+        ul {
+          flex-direction: column;
+        }
+  
+        li {
+          margin: 10px 0;
+        }
+  
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  
+    
+
+    
